@@ -76,7 +76,13 @@ body {
     @apply bg-background text-foreground;
   }
 }
- 
-.logoShd{
-  text-shadow: 0px 1px 25px rgb(202, 136, 12);
+
+input::placeholder{
+  color: black;
+}
+
+@media screen and (max-width: 640px) {
+  input::placeholder{
+    font-size: 10px;
+  }
 }
