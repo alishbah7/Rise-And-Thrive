@@ -1,6 +1,10 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "swiper/css";
+/* @import "swiper/css/autoplay"; */
+
+
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -77,12 +81,128 @@ body {
   }
 }
 
+/*--=== FOR SEARCH BAR ===--*/
 input::placeholder{
   color: black;
 }
-
 @media screen and (max-width: 640px) {
   input::placeholder{
     font-size: 10px;
   }
+}
+
+
+/*--=== FOR CATEGORIES SLIDER ===--*/
+.slider {
+  margin-top: 20px;
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    #000 10% 90%,
+    transparent
+  );
+}
+
+.slider .list {
+  display: flex;
+  width: 100%;
+  min-width: calc(var(--width) * var(--quantity));
+  position: relative;
+}
+
+.slider .list .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  height: 40px;
+  width: var(--width);
+  position: absolute;
+  left: 100%;
+  animation: autoRun 15s linear infinite;
+  animation-delay: calc((-15s / var(--quantity)) * (var(--position) - 1)) !important;
+  transition: filter 0.5s;
+  text-shadow: 0px 1px 25px rgb(218, 148, 148);
+}
+.item1{
+  background-image: url('../public/images/confidence.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item2{
+  background-image: url('../public/images/development.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item3{
+  background-image: url('../public/images/mental-wellness.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item4{
+  background-image: url('../public/images/motivation.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item5{
+  background-image: url('../public/images/growth.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item6{
+  background-image: url('../public/images/productivity.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item7{
+  background-image: url('../public/images/goals.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item8{
+  background-image: url('../public/images/inspiration.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item9{
+  background-image: url('../public/images/health.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.item .Link {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+@keyframes autoRun {
+  from {
+    left: 100%;
+  }
+  to {
+    left: calc(var(--width) * -1);
+  }
+}
+
+.slider:hover .item{
+  animation-play-state: paused!important;
+  filter: grayscale(1);
+}
+.slider .item:hover{
+  cursor: pointer;
+  filter: grayscale(0);
 }
