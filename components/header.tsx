@@ -6,13 +6,13 @@ import { Menu } from 'lucide-react';
 const Header = () => {
   return (
     <header className="shadow-md">
-      <div className="w-[100%] flex items-center justify-between py-2 md:py-3 px-3 lg:px-6">
+      <div className="w-[100%] flex items-center justify-between py-2 md:py-2 px-3 lg:px-6">
 
         {/*--=== LOGO ===--*/}
         <div className="text-[#8f6922] text-[20px] sm:text-[30px] font-bold font-[Garamond]">Rise&Thrive</div>
 
         {/*--=== NAVIGATION ===--*/}
-        <nav className="hidden md:flex space-x-10">
+        <nav className="hidden md:flex space-x-5 lg:space-x-10">
           <Link href={''} className="text-gray-700 hover:text-[#8f6922]">Categories</Link>
           <Link href={''} className="text-gray-700 hover:text-[#8f6922]">Blogs</Link>
           <Link href={''} className="text-gray-700 hover:text-[#8f6922]">Contact Us</Link>
