@@ -81,13 +81,23 @@ body {
   }
 }
 
+/*--=== FOR SCROLL BAR ===--*/
+::-webkit-scrollbar{
+  width: 12px;
+}
+::-webkit-scrollbar-thumb{
+  background: #8f6922;
+  border-radius: 10px;
+}
+
+
 /*--=== FOR SEARCH BAR ===--*/
 input::placeholder{
   color: black;
 }
 @media screen and (max-width: 640px) {
   input::placeholder{
-    font-size: 10px;
+    font-size: 16px;
   }
 }
 
@@ -397,4 +407,77 @@ background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url('/images
 
 .swiper-slide--three {
 background: linear-gradient(to top, #0f2027, #203a4300, #2c536400), url('/images/health.jpg') no-repeat 50% 50%/cover;
+}
+
+/*--=== POSTS CARDS ===--*/
+.postsBg{
+  background: linear-gradient(to right,rgb(234, 222, 201), rgb(243, 225, 183), rgb(234, 222, 201));
+}
+
+/*--=== FOOTER ===--*/
+.footer{
+  padding:30px 0px;
+  text-align:center;
+}
+    
+.footer .row{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  font-size: 18px;
+}  
+.footer .row{
+  text-decoration:none;
+  color: #8f6922;
+  text-shadow: 0px 1px 15px #dfbc7c;
+  transition: all 0.5s ease;
+}
+    
+.footer .row a i:hover{
+  transform: translateY(-5px);
+  transition: all 0.5s ease;
+}
+.footer .row ul{
+  width: 100%;
+}
+    
+.footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  transition: all 0.5s ease;
+}
+.footer .row ul li:hover{ 
+  transform: translateY(-3px) translateX(-5px);
+  transition: all 0.5s ease;
+}
+.footer .row a i{
+  font-size: 20px;
+  margin: 0% 1%;
+  transition: all 0.5s ease;
+}
+    
+@media (max-width:720px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+}
+
+/*--=== COPYRIGHT ===--*/
+.copyright{
+  padding: 10px;
+  text-align: center;
+}
+.copyright p{
+  color: #8f6922;
+  font-size: 12px;
 }

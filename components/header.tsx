@@ -13,7 +13,7 @@ const Header = () => {
 
         {/*--=== NAVIGATION ===--*/}
         <nav className="hidden md:flex space-x-5 lg:space-x-10">
-          <Link href={''} className="text-gray-700 hover:text-[#8f6922]">Categories</Link>
+          <Link href='#categories' className="text-gray-700 hover:text-[#8f6922]">Categories</Link>
           <Link href={''} className="text-gray-700 hover:text-[#8f6922]">Blogs</Link>
           <Link href={''} className="text-gray-700 hover:text-[#8f6922]">Contact Us</Link>
           <Link href={''} className="text-gray-700 hover:text-[#8f6922]">About Us</Link>
@@ -39,7 +39,7 @@ const Header = () => {
                 <div className='block md:hidden'>
                     <div className="text-[#8f6922] text-[20px] sm:text-[30px] font-bold font-[Garamond] mt-[24px]">Rise&Thrive</div>
                     <nav className="flex flex-col gap-[20px] mt-[14px]">
-                        <Link href={''} className="text-gray-700 hover:text-[#8f6922]">Categories</Link>
+                        <Link href='#categories' className="text-gray-700 hover:text-[#8f6922]">Categories</Link>
                         <Link href={''} className="text-gray-700 hover:text-[#8f6922]">Blogs</Link>
                         <Link href={''} className="text-gray-700 hover:text-[#8f6922]">Contact Us</Link>
                         <Link href={''} className="text-gray-700 hover:text-[#8f6922]">About Us</Link>
