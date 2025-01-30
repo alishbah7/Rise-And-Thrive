@@ -1,9 +1,9 @@
-import Link
- from "next/link"
+import Link from "next/link"
+
 export default function Footer(){
     return(
         <div>
-            {/*------====== FOOTER ======------*/}
+            {/*--==== FOOTER ====--*/}
             <footer>
                 <div className="footer">
                     <div className="row">
@@ -22,7 +22,7 @@ export default function Footer(){
                 </div>
             </footer>
 
-            {/*------====== COPYRIGHT ======------*/}
+            {/*--==== COPYRIGHT ====--*/}
             <div className="copyright">
                 <p>&#169; All Rights Reserved By Alishbah.</p>
             </div>

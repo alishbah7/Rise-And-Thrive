@@ -21,7 +21,7 @@ const CatCard: React.FC<CatCardProps> = ({ categories }) => {
       <h1 className="flex justify-center items-center text-center md:justify-start md:items-start w-[85%] mt-[30px] font-bold text-[#8f6922] text-[35px] tracking-wide">Top Categories</h1>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 px-3 py-3">
         {categories.map((category) => (
-          <Link href={''} key={category.id} className="relative group overflow-hidden rounded-lg shadow-lg">
+          <Link href={'/posts'} key={category.id} className="relative group overflow-hidden rounded-lg shadow-lg">
 
             {/*--=== IMAGE ===--*/}
             <Image

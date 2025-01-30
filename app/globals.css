@@ -231,6 +231,7 @@ main {
   background: linear-gradient(to right,rgb(234, 222, 201), rgb(243, 225, 183), rgb(234, 222, 201));
   background-size: cover;
 }
+
 @media screen and (max-width: 875px) {
 main {
   height: auto;
